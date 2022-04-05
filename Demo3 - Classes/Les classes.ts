@@ -62,7 +62,7 @@ sportDeCompetition.afficher();
 
 // ############################### Interface de classe
 
-// https://www.typescriptlang.org/static/TypeScript%20Interfaces-34f1ad12132fb463bd1dfe5b85c5b2e6.png
+// https://www.typescriptlang.org/cheatsheets
 
 // Création de l'interface
 // Contrat ou comportement attendu
