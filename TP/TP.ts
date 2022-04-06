@@ -1,3 +1,4 @@
+// Importation du module VenteauxEncheres placé dans le fichier VenteAuxEncheres.ts
 import { VenteAuxEncheres } from './VenteAuxEncheres';
 
 // ######################## Instances et utilisation du module
