@@ -174,22 +174,3 @@ var VenteAuxEncheres;
     }(Oeuvre));
     VenteAuxEncheres.Peinture = Peinture;
 })(VenteAuxEncheres = exports.VenteAuxEncheres || (exports.VenteAuxEncheres = {}));
-// ######################## Instances et utilisation du module
-// Création des oeuvres
-var oeuvres = [];
-// On ajoute une oeuvre à notre tableau d'oeuvres
-oeuvres.push(new VenteAuxEncheres.Sculpture(1925, "Le penseur de Rodin", [
-    new VenteAuxEncheres.Auteur("Rodin", "Auguste")
-], "Bronze"), new VenteAuxEncheres.Livre(1876, "Au bonheur des dames", [
-    new VenteAuxEncheres.Auteur("Zola", "Emile")
-]), new VenteAuxEncheres.Peinture(1938, "Guernica", [
-    new VenteAuxEncheres.Auteur("Picasso", "Pablo")
-]));
-// Parcours et affichage des oeuvres
-oeuvres.forEach(function (oeuvre) { return console.log(oeuvre.afficher()); });
-// Encheres
-oeuvres.forEach(function (oeuvre) {
-    oeuvre.encherir(Math.floor(Math.random() * 10000), new VenteAuxEncheres.Acheteur("Bara", "Morgane"));
-});
-// Parcours et affichage des oeuvres
-oeuvres.forEach(function (oeuvre) { return console.log(oeuvre.afficher()); });
